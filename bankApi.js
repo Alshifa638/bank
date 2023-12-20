@@ -10,9 +10,10 @@ app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Methods", "GET,POST,DELETE,PUT,OPTIONS");
   next();
 });
-var port=process.env.PORT || 2450;
+const port= 2450;
 grtOrLess = "";
 statecity=[];
+
 customers = [
   { name: "Daniel", password: "dan1234", role: "manager" },
   { name: "Rachel", password: "rachel123", role: "customer" },
@@ -30,6 +31,7 @@ customers = [
   { name: "Apoorv", password: "apoorv123", role: "customer" },
   { name: "Shanky", password: "shanky123", role: "customer" }
 ];
+
 customerDetails = [
   {
     name: "Apoorv",
@@ -671,7 +673,7 @@ app.post("/nomineeDetails", function(req, res) {
     gender: req.body.gender,
     dob: req.body.dob,
     relationship: req.body.relationship,
-    jointsignatory: req.body.jointSignatory
+    jointsignatory: req.body.jointsignatory
   };
   console.log(nominee);
   nomineeDetails.push(nominee);
