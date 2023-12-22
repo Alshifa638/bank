@@ -2,10 +2,10 @@
   "name": "new",
   "version": "1.0.0",
   "description": "",
-  "main": "bankApi.js",
+  "main": "studentApi.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node bankApi.js"
+    "start": "node studentApi.js"
   },
   "keywords": [],
   "author": "",
